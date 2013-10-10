@@ -88,6 +88,8 @@
               <?php/*
 	              根据查询过滤器。
 				  查询表为：TBL_TRANS_SETT_HISTORY_A，TBL_TRANS_SETT_HISTORY_B
+				  默认查询字段：今天的时间
+				  排序方式：按最新时间
 				  *******
 				  根据MER_CODE 查询 TBL_MER_INFO 中的 MER_NAME
 				  根据TERM_ID 查询 TBL_TERM_INFO 中的 TERM_TYPE
@@ -491,7 +493,7 @@
 											<td><?php /*CARD_BRAND*/?>中国工商银行上海淞沪分行</td>
 										</tr>
 										<tr>
-											<td>卡片类型(<?php /*CARD_BRAND*/?>)</td>
+											<td>卡片类型(<?php /*CARD_BRAND 要做个case 判断 不同结果显示不同icon*/?>)</td>
 											<td<?php /*CARD_TYPE*/?>>-</td>
 										</tr>
 									</tbody>
@@ -512,8 +514,8 @@
 											<td><?php /*TERM_ID*/?>123467</td>
 										</tr>
 										<tr>
-											<td>终端名称</td>
-											<td><?php /*TERM_TYPE*/?></td>
+											<td>商户名称</td>
+											<td><?php /*MER_NAME*/?></td>
 										</tr>
 										<tr>
 											<td>地址</td>
