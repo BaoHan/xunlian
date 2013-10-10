@@ -505,31 +505,31 @@
 									<tbody>
 										<tr>
 											<td>商户号</td>
-											<td><?php /**/?>12546564567</td>
+											<td><?php /*MER_CODE*/?>12546564567</td>
 										</tr>
 										<tr>
 											<td>终端号</td>
-											<td><?php /**/?>123467</td>
+											<td><?php /*TERM_ID*/?>123467</td>
 										</tr>
 										<tr>
 											<td>终端名称</td>
-											<td><?php /**/?></td>
+											<td><?php /*TERM_TYPE*/?></td>
 										</tr>
 										<tr>
 											<td>地址</td>
-											<td><?php /**/?></td>
+											<td><?php /*跟据mer_code 查找TBL_MER_INFO表中的 MER_ADDR*/?></td>
 										</tr>
 										<tr>
 											<td>联系人</td>
-											<td><?php /**/?></td>
+											<td><?php /*跟据mer_code 查找TBL_MER_INFO表中的 MER_REL_MAN*/?></td>
 										</tr>
 										<tr>
 											<td>联系电话</td>
-											<td><?php /**/?></td>
+											<td><?php /*跟据mer_code 查找TBL_MER_INFO表中的 MER_REL_TEL*/?></td>
 										</tr>
 										<tr>
 											<td>邮箱</td>
-											<td><?php /**/?></td>
+											<td><?php /*跟据mer_code 查找TBL_MER_INFO表中的 MER_EMAIL*/?></td>
 										</tr>
 									</tbody>
 								</table>
@@ -548,12 +548,13 @@
       <div id="footer" class="span12">&copy; 2013 <a href="http://#">上海讯联数据服务有限公司</a> 版权所有  |  <a href="http://#">联系方式</a></div>
 </div>
 <script src="js/jquery.min.js"></script> 
-<script src="js/jquery.ui.custom.js"></script> 
+<script src="js/jquery.ui.custom.js"></script>
+<script src="js/maruti.js"></script> 
 <script src="js/bootstrap.min.js"></script> 
+<?php /*本页面的JS*/?>
 <script src="js/jquery.uniform.js"></script> 
 <script src="js/select2.min.js"></script> 
 <script src="js/jquery.dataTables.min.js"></script> 
-<script src="js/maruti.js"></script> 
 <script src="js/maruti.tables.js"></script>
 </body>
 </html>
