@@ -1,4 +1,10 @@
-<?php/*config 页面*/?>
+<?php/*
+				清算报表日期
+	              根据查询过滤器。
+				  查询表为：TBL_SETTLE_FILE 
+				  排序方式：按最新清算时间
+				  *******
+	              */?>
 <?php include 'header.php';?>
 <div id="content">
   <div id="content-header">
@@ -32,11 +38,11 @@
               <tbody>
                 <tr>
                   <td><input type="checkbox" /></td>
-                  <td>2013/04/12</td>
-                  <td>2013/04/12</td>
-                  <td>12465875</td>
-                  <td>未知名称</td>
-                  <td><a href="#" class="btn"><i class="icon-download"></i> 下载</a></td>
+                  <td><?php /*SETT_DATE*/?>2013/04/12</td>
+                  <td><?php /*FILE_DATE*/?>2013/04/12</td>
+                  <td><?php /*MER_CODE*/?>12465875</td>
+                  <td><?php /*根据MER_CODE查询MER_NAME*/?>未知名称</td>
+                  <td><?php /*FILE_PATH*/?><a href="#" class="btn"><i class="icon-download"></i> 下载</a></td>
                 </tr>
                 <tr>
                   <td><input type="checkbox" /></td>
