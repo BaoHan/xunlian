@@ -3,7 +3,7 @@
 	
 	该页面中必须要填写两个内容，开始日期-结束日期。之间的时间必须少于6个月。
 	其余字段作为查询条件POST到resault.php 页面中，显示结果。
-	
+	历史记录查 TBL_TRANS_SETT_HISTORY_A，TBL_TRANS_SETT_HISTORY_B表
 */?>
 
 <?php include 'header.php';?>

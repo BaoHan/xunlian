@@ -35,7 +35,7 @@
               </thead>
               <?php/*
 	              根据查询过滤器。
-				  查询表为：TBL_TRANS_SETT_HISTORY_A，TBL_TRANS_SETT_HISTORY_B
+				  查询表为：历史记录查 TBL_TRANS_SETT_HISTORY_A，TBL_TRANS_SETT_HISTORY_B表
 				  默认查询字段：今天的时间
 				  排序方式：按最新时间
 				  *******

@@ -1,4 +1,11 @@
-<?php/*config 页面*/?>
+<?php/*
+	商户管理页面
+	页面功能：
+	@ 高级搜索
+	@ 分配商户给代理商
+	@ 商户列表
+	@ 代理账户权限，不显示此页。
+*/?>
 <?php include 'header.php';?>
 <div id="search">
   <button title="搜索" style="color:#fff;margin-top:0;"><i class="icon-search icon-white"></i> 高级搜索</button>
@@ -18,6 +25,9 @@
           </div>
           <div class="widget-content">
           <div class="row-fluid ">
+          <?php/*高级搜索模块
+	          搜索结果页面，也是该页面，你们也可以复制本php，来作为搜索结果页面。
+          */?>
           <form action="#" method="get" class="">
           <div class="control-group span2">
 										<label class="control-label">终端编号：</label>
@@ -56,18 +66,20 @@
           </div>
       </div>
       <div class="row-fluid">
+      <?php/*搜索结果列表 和之前一样 用的 data-table*/?>
       <div id="data-list" class="span9">
               <div class="widget-box">
           <div class="widget-title">
              <span class="icon"><input type="checkbox" id="title-checkbox" name="title-checkbox" />
             </span> 
-            <h5>商户列表</h5><div class="buttons" style="float:left !important;"><a  href="#myArrange" data-toggle="modal" class="btn btn-mini">分配给账户</a></div>
+            <h5>商户列表</h5><div class="buttons" style="float:left !important;"><a  href="#myArrange" data-toggle="modal" class="btn btn-mini"><?php/*这个按钮会让用户分配账户*/?>分配给账户</a></div>
             <div id="myArrange" class="modal hide" aria-hidden="true" style="display: none;">
               <div class="modal-header">
                 <button data-dismiss="modal" class="close" type="button">×</button>
                 <h3>选择代理账户</h3>
               </div>
               <div class="modal-body">
+              <?php/*这里载入该机构用户权限下的所有代理账户。并将选定的商户添加为选择代理账户的默认查询条件。*/?>
                 <table class="table">
           <thead>
             <tr>
@@ -125,6 +137,7 @@
               <thead>
                 <tr>
                 <th><i class="icon-resize-vertical"></i></th>
+                <th>机构代码</th>
                   <th>商户代码</th>
                   <th>商户名称</th>
                   <th>代理编号</th>
@@ -136,14 +149,16 @@
               </thead>
               <tbody>
               <tr>
+              <?php/*通过用户默认的机构代码查询表 TBL_MER_INFO */?>
               	<td><input type="checkbox" /></td>
-                  <td>018581058120008</td>
-                  <td>广州市越秀区弥敦道茶餐厅</td>
-                  <td>2342555</td>
-                  <td>-</td>
-                  <td>0.2%</td>
-                  <td>156</td>
-                  <td>正常</td>
+              	<td><?php/*当前用户绑定的机构代码*/?>1234566</td>
+                  <td><?php/*MER_CODE*/?>018581058120008</td>
+                  <td><?php/*MER_NAME*/?>广州市越秀区弥敦道茶餐厅</td>
+                  <td><?php/*显示代理商ID 从账户管理生成所填写的字段*/?>2342555</td>
+                  <td><?php/*显示代理账户名称 从账户管理生成所填写的字段*/?>-</td>
+                  <td><?php/*用 MER_CODE 查 TBL_SETT_MER_SCHEME*/?>0.2%</td>
+                  <td><?php/*MER_TYPE*/?>156</td>
+                  <td><?php/*MER_STATUS*/?>正常</td>
               </tr>	
                </tbody>
             </table>
@@ -166,32 +181,36 @@
 									</thead>
 									<tbody>
 										<tr>
+											<td>机构代码</td>
+											<td><?php/*当前用户绑定的机构代码*/?>018581058120008</td>
+										</tr>
+										<tr>
 											<td>代理商代码</td>
-											<td>018581058120008</td>
+											<td><?php/*显示代理商ID 从账户管理生成所填写的字段*/?>018581058120008</td>
 										</tr>
 										<tr>
 											<td>商户名称</td>
-											<td>广州市越秀区弥敦道茶餐厅</td>
+											<td><?php/*MER_NAME*/?>广州市越秀区弥敦道茶餐厅</td>
 										</tr>
 										<tr>
 											<td>代理商地区</td>
-											<td>广州市</td>
+											<td><?php/*MER_CITY */?>广州市</td>
 										</tr>
 										<tr>
 											<td>分润信息</td>
-											<td>-</td>
+											<td><?php/*<?php/*用 MER_CODE 查 TBL_SETT_MER_SCHEME*/?>*/?>-</td>
 										</tr>
 										<tr>
 											<td>联系人</td>
-											<td>-</td>
+											<td><?php/*MER_REL_MAN*/?>-</td>
 										</tr>
 										<tr>
 											<td>电话</td>
-											<td>-</td>
+											<td><?php/*MER_REL_TEL*/?>-</td>
 										</tr>
 										<tr>
 											<td>邮箱</td>
-											<td>-</td>
+											<td><?php/*MER_EMAIL*/?>-</td>
 										</tr>
 									</tbody>
 								
@@ -202,33 +221,30 @@
 										</tr>
 									</thead>
 									<tbody>
-										<tr>
-											<td>登入邮箱</td>
-											<td>username@company.com</td>
-										</tr>
+										
 										<tr>
 											<td>账户名称</td>
-											<td>冯燕兰</td>
+											<td><?php/**/?>冯燕兰</td>
 										</tr>
 										<tr>
 											<td>账户</td>
-											<td>6225211082519876</td>
+											<td><?php/**/?>6225211082519876</td>
 										</tr>
 										<tr>
 											<td>银行名称</td>
-											<td>上海浦东发展银行广州东山支行</td>
+											<td><?php/*MER_CB_NAME */?>上海浦东发展银行广州东山支行</td>
 										</tr>
 										<tr>
 											<td>银行代码</td>
-											<td>310581000017310581000017</td>
+											<td><?php/*MER_CB_CODE */?>310581000017310581000017</td>
 										</tr>
 										<tr>
 											<td>法人代表</td>
-											<td>冯燕兰</td>
+											<td><?php/*MER_CORP */?>冯燕兰</td>
 										</tr>
 										<tr>
 											<td>负责人</td>
-											<td>-</td>
+											<td><?php/*MER_MASTER */?>-</td>
 										</tr>
 										
 									</tbody>
@@ -242,27 +258,27 @@
 									<tbody>
 										<tr>
 											<td>联系人</td>
-											<td>冯燕兰</td>
+											<td><?php/*MER_REL_MAN */?>冯燕兰</td>
 										</tr>
 										<tr>
 											<td>电话</td>
-											<td>83586789</td>
+											<td><?php/*MER_REL_TEL */?>83586789</td>
 										</tr>
 										<tr>
 											<td>传真</td>
-											<td>-</td>
+											<td><?php/*MER_FAX */?>-</td>
 										</tr>
 										<tr>
 											<td>电子邮箱</td>
-											<td>-</td>
+											<td><?php/*MER_EMAIL */?>-</td>
 										</tr>
 										<tr>
 											<td>地址</td>
-											<td>广州市越秀区淘金路54号首层E、D房</td>
+											<td><?php/*MER_ADDR */?>广州市越秀区淘金路54号首层E、D房</td>
 										</tr>
 										<tr>
 											<td>邮编</td>
-											<td>510000</td>
+											<td><?php/*MER_POSTCODE*/?>510000</td>
 										</tr>
 									</tbody>
 									<thead>
@@ -274,11 +290,11 @@
 									<tbody>
 										<tr>
 											<td>银联境外卡</td>
-											<td>固定百分比 1.100%</td>
+											<td><?php/*用 MER_CODE 查 TBL_SETT_MER_SCHEME*/?>固定百分比 1.100%</td>
 										</tr>
 										<tr>
 											<td>银联境内卡</td>
-											<td>固定百分比 1.100%</td>
+											<td><?php/*用 MER_CODE 查 TBL_SETT_MER_SCHEME*/?>固定百分比 1.100%</td>
 										</tr>
 									</tbody>
 								</table>

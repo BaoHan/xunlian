@@ -1,4 +1,11 @@
-<?php/*config 页面*/?>
+<?php/*创建帐号，商户管理页面
+	
+	功能：
+	@	创建固定权限的账户
+	@	创建的字段是写入用户的自定义字段
+	@
+	
+*/?>
 <?php include 'header.php';?>
 <div id="search">
   <button title="搜索" style="color:#fff;margin-top:0;"><i class="icon-search icon-white"></i> 高级搜索</button>
@@ -57,6 +64,12 @@
               <div class="modal-body">
                	<form class="form-horizontal" method="post" action="#" name="basic_validate" id="basic_validate" novalidate="novalidate">
                                     <div class="control-group">
+                                        <label class="control-label">机构代码</label>
+                                        <div class="controls">
+                                            <input type="text">
+                                        </div>
+                                    </div>
+                                    <div class="control-group">
                                         <label class="control-label">代理商代码</label>
                                         <div class="controls">
                                             <input type="text">
@@ -96,7 +109,7 @@
                                         </div>
                                         </div>
                                         <div class="control-group">
-                                          <label class="control-label">电话</label>
+                                          <label class="control-label">邮箱</label>
                                         <div class="controls">
                                             <input type="text" >                                           
                                         </div>
@@ -112,7 +125,7 @@
             <table class="table table-bordered data-table">
               <thead>
                 <tr>
-                
+                <th>机构代码</th>
                   <th>代理商代码</th>
                   <th>代理商名称</th>
                   <th>代理商地区</th>
@@ -125,6 +138,8 @@
               </thead>
               <tbody>
               <tr>
+               <td>12375900</td>
+<?php /*这里 是创建的用户自定义字段*/ ?>
                   <td>12375900</td>
                   <td>长春天一总代理</td>
                   <td>长春市</td>
@@ -134,66 +149,7 @@
                   <td>dundao@name.com</td>                 
                   <td><a href="#"><i class="icon-remove"></i> 删除</a></td>
                   </tr>	
-                  <tr>
-                  <td>12375900</td>
-                  <td>长春天一总代理</td>
-                  <td>长春市</td>
-                  <td>0.2%</td>
-                  <td>张三</td>
-                  <td>1889090910</td>
-                  <td>dundao@name.com</td>                 
-                  <td><a href="#"><i class="icon-remove"></i> 删除</a></td>
-                  </tr>	
-                  <tr>
-                  <td>12375900</td>
-                  <td>长春天一总代理</td>
-                  <td>长春市</td>
-                  <td>0.2%</td>
-                  <td>张三</td>
-                  <td>1889090910</td>
-                  <td>dundao@name.com</td>                 
-                  <td><a href="#"><i class="icon-remove"></i> 删除</a></td>
-                  </tr>	
-                  <tr>
-                  <td>12375900</td>
-                  <td>长春天一总代理</td>
-                  <td>长春市</td>
-                  <td>0.2%</td>
-                  <td>张三</td>
-                  <td>1889090910</td>
-                  <td>dundao@name.com</td>                 
-                  <td><a href="#"><i class="icon-remove"></i> 删除</a></td>
-                  </tr>	
-                  <tr>
-                  <td>12375900</td>
-                  <td>长春天一总代理</td>
-                  <td>长春市</td>
-                  <td>0.2%</td>
-                  <td>张三</td>
-                  <td>1889090910</td>
-                  <td>dundao@name.com</td>                 
-                  <td><a href="#"><i class="icon-remove"></i> 删除</a></td>
-                  </tr>	
-                  <tr>
-                  <td>12375900</td>
-                  <td>长春天一总代理</td>
-                  <td>长春市</td>
-                  <td>0.2%</td>
-                  <td>张三</td>
-                  <td>1889090910</td>
-                  <td>dundao@name.com</td>                 
-                  <td><a href="#"><i class="icon-remove"></i> 删除</a></td>
-                  </tr>	
-                  <tr>
-                  <td>12375900</td>
-                  <td>长春天一总代理</td>
-                  <td>长春市</td>
-                  <td>0.2%</td>
-                  <td>张三</td>
-                  <td>1889090910</td>
-                  <td>dundao@name.com</td>                 
-                  <td><a href="#"><i class="icon-remove"></i> 删除</a></td>
-                  </tr>	
+                  	
                  </tbody>
             </table>
           </div>
