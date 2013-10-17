@@ -91,7 +91,7 @@
 				  默认查询字段：今天的时间
 				  排序方式：按最新时间
 				  *******
-				  根据MER_CODE 查询 TBL_MER_INFO 中的 MER_NAME
+				  
 				  根据TERM_ID 查询 TBL_TERM_INFO 中的 TERM_TYPE
 				  根据BEFORE_TRANS_CODE 查询 TBL_TXN_TYPE 中的 TXN_TYPE
 				  根据TRANS_CURR 直接读取就行了
@@ -99,7 +99,7 @@
 				  字段如下：
 				  <tr>
                   <td>TRANS_DATETIME</td>
-                  <td><small>MER_NAME</small><br/>MER_CODE</td>
+                  <td><small>MER_ADDR_NAME</small><br/>MER_CODE</td>
                   <td><small>TERM_TYPE</small><br/>TERM_ID</td>
                   <td>TXN_TYPE</td>
                   <td style="text-align:right;"><small>TRANS_CURR</small><br/>TRANS_AMT （要有千分符）</td>
