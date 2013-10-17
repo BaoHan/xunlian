@@ -20,7 +20,7 @@
           <div class="widget-title">
              <span class="icon"><i class="icon-th"></i></span> 
             <h5>高级搜索</h5>
-            <?php/*	点击搜索显示resault.php 页面*/?>
+            <?php /*点击搜索显示resault.php 页面*/ ?>
             <div class="buttons"><a href="#" class="btn btn-mini btn-success"><i class="icon-search"></i> 开始搜索</a></div>
           </div>
           <div class="widget-content">
@@ -94,7 +94,7 @@
 				  根据MER_CODE 查询 TBL_MER_INFO 中的 MER_NAME
 				  根据TERM_ID 查询 TBL_TERM_INFO 中的 TERM_TYPE
 				  根据BEFORE_TRANS_CODE 查询 TBL_TXN_TYPE 中的 TXN_TYPE
-				  根据TRANS_CURR 查询 ？？？？
+				  根据TRANS_CURR 直接读取就行了
 				  
 				  字段如下：
 				  <tr>
@@ -106,7 +106,7 @@
                   <td><small>CARD_BRAND</small><br/>ACCT_NUM</td>
                   <td><small>（如果结果为00则显示icon-ok，如果不为0，则显示-还没做。。）<i class="icon-ok"></i> RESP_AUTH_CODE</small><br/>RESP_AUTH_CODE</td>
                 </tr>
-              */?>
+              */ ?>
               <tbody>
                 <tr>
                   <td>11:30:11</td>
