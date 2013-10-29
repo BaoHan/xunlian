@@ -1,7 +1,5 @@
 
-$(document).ready(function(){
-
-	$("#search button").click(function(){
+$(document).ready(function(){	$("#search button").click(function(){
   if ($("#search-box").css("display") == "none"){
   $("#search-box").fadeIn("slow");
   }else{
@@ -22,6 +20,14 @@ $(document).ready(function(){
 		  $("#data-list").addClass("span9");
 	 }); 	  
   });
+  
+  $("#data-list #plane").click(function(){
+    $("#data-list").removeClass("span12");	 
+	 $("#detail").fadeIn(function(){
+		  $("#data-list").addClass("span9");
+	 }); 	  
+  });
+
 	
 	// === Sidebar navigation === //
 	

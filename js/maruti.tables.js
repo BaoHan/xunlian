@@ -7,7 +7,7 @@ $(document).ready(function(){
 	$('.data-table').dataTable({
 		"bJQueryUI": true,
 		"sPaginationType": "full_numbers",
-		"sDom": '<""f>t<"F"lp>',
+		"sDom": '<""f>t<"F"lip>',
 		"oLanguage": {  
                    "sLengthMenu": "每页显示 _MENU_ 条记录",  
                    "sZeroRecords": "对不起，查询不到任何相关数据",  
@@ -15,7 +15,8 @@ $(document).ready(function(){
                    "sInfoEmtpy": "找不到相关数据",  
                    "sInfoFiltered": "数据表中共为 _MAX_ 条记录)",  
                    "sProcessing": "正在加载中...",  
-                   "sSearch": "搜索",  
+                   "sSearch": "搜索", 
+                   "bInfo": true, 
                    "sUrl": "", //多语言配置文件，可将oLanguage的设置放在一个txt文件中，例：Javascript/datatable/dtCH.txt  
                    "oPaginate": {  
                        "sFirst":    "第一页",  

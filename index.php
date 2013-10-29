@@ -64,7 +64,7 @@
                     <li>
                <?php/*@@这里用FLOT JS 来设置，只需要输入数据，就能形成图表。因为没有数据库，暂时不做。*/?>     
         <div class="left peity_bar_good"><span><?php/*7个数据，分别读取数据库里面的字段就行了。以下类似。*/?>
-2,4,9,7,12,10,12</span></div>
+200,4123,921,744,120,1024,1211</span></div>
         <div class="right"> <strong>￥123,759.00</strong> 当前交易金额（元） </div>
       </li>
       <li>

@@ -8,12 +8,26 @@
 <div id="search">
   <button title="搜索" style="color:#fff;margin-top:0;"><i class="icon-search icon-white"></i> 高级搜索</button>
 </div>
+
 <!--close-top-Header-menu-->
 <div id="content">
   <div id="content-header">
-    <div id="breadcrumb"><a href="#" class="current">今日交易</a> </div>
+    <div id="breadcrumb"><a href="#" class="current">今日交易</a>
+        </div>
+       <?php/* @ since 1.2 
+       @ 新增了视图切换下拉菜单	*/?>
+     <div class="btn-group" style="top: -18px;left: 75px;">
+		 <button data-toggle="dropdown" class="btn dropdown-toggle"style="padding: 5px;">视图方式<span class="caret"></span></button>
+									  <ul class="dropdown-menu">
+										<li><a id="list" href="today.php"><i class="icon-th-list"></i> 表视图</a></li>
+										<li><a id="card" href="today-card.php"><i class="icon-th"></i> 卡片视图</a></li>
+									  </ul>
+									</div>
   </div>
-  <div class="container-fluid">
+  
+
+  
+    <div class="container-fluid">
     <div class="row-fluid">
       <div class="span12">
       <div id="search-box" class="widget-box">
@@ -66,7 +80,11 @@
           </div>
       </div>
       <div class="row-fluid">
-      <div id="data-list" class="span9">
+      <?php /*
+	     @ since 1.2
+	     @ 以下的class="span9" 修改为span12
+      */?>
+      <div id="data-list" class="span12">
               <div class="widget-box">
           <div class="widget-title">
              <span class="icon"><i class="icon-th"></i></span> 
@@ -104,7 +122,20 @@
                   <td>TXN_TYPE</td>
                   <td style="text-align:right;"><small>TRANS_CURR</small><br/>TRANS_AMT （要有千分符）</td>
                   <td><small>CARD_BRAND</small><br/>ACCT_NUM</td>
-                  <td><small>（如果结果为00则显示icon-ok，如果不为0，则显示-还没做。。）<i class="icon-ok"></i> RESP_AUTH_CODE</small><br/>RESP_AUTH_CODE</td>
+                  <td><small>
+                  if($resault==00){
+                  <i class="icon-ok"></i>00
+                  } else if (!exists($resault)){
+                  <i class="icon-question-sign"></i>未知
+                  } else{
+                  <i class="icon-remove"></i> echo $resault
+                  }
+               
+                  
+                  
+                  
+                  
+                  （如果结果为00则显示icon-ok，如果不为0，则显示-还没做。。）<i class="icon-ok"></i> RESP_AUTH_CODE</small><br/>RESP_AUTH_CODE</td>
                 </tr>
               */ ?>
               <tbody>
@@ -434,7 +465,11 @@
 	              JQUERY 还需要做个，当点击该<tr>时，高亮显示。
 	              
               */?>
-              <div id="detail" class="span3">
+              <?php /*
+	              @ since 1.2
+	              这里加入了隐藏，默认不显示 style="display:none"
+              */?>
+              <div id="detail" class="span3" style="display:none" >
 	                <div class="widget-box" style="">
 						<div class="widget-title">
 							<span class="icon"><i class="icon-th"></i></span> 
@@ -542,6 +577,7 @@
         </div>        
       </div>
     </div>
+
   </div>
 </div>
 </div>

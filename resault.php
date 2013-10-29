@@ -6,14 +6,32 @@
 <?php include 'header.php';?>
 <div id="content">
   <div id="content-header">
-    <div id="breadcrumb"><a href="history.php" class="current">交易查询</a><a href="#" class="current">查询结果</a> </div>
+    <div id="breadcrumb"><a href="history.php" class="current">交易查询</a>    </div>
+    <?php /*
+	    @ since 1.2
+	    @ 删除查询结果的 a 标签
+	    @ 添加了视图切换下拉菜单
+    */?>
+    <div class="btn-group" style="top: -18px;left: 75px;">
+		 <button data-toggle="dropdown" class="btn dropdown-toggle"style="padding: 5px;">视图方式<span class="caret"></span></button>
+									  <ul class="dropdown-menu">
+										<li><a id="list" href="resault.php"><i class="icon-th-list"></i> 表视图</a></li>
+										<li><a id="card" href="resault-card.php"><i class="icon-th"></i> 卡片视图</a></li>
+									  </ul>
+									</div>
+
   </div>
   <div class="container-fluid">
     <div class="row-fluid">
       <div class="span12">
      
       <div class="row-fluid">
-      <div id="data-list" class="span9">
+      <?php /*
+	    @ since 1.2
+	    @ 修改默认list视图，由class span9 修改为 span12
+    */?>
+
+      <div id="data-list" class="span12">
               <div class="widget-box">
           <div class="widget-title">
              <span class="icon"><i class="icon-th"></i></span> 
@@ -383,7 +401,11 @@
 	              JQUERY 还需要做个，当点击该<tr>时，高亮显示。
 	              
               */?>
-              <div id="detail" class="span3">
+                    <?php /*
+	    @ since 1.2
+	    @ 将ID detail 的可见修改为 display：none
+					*/?>
+              <div id="detail" class="span3" style="display:none;">
 	                <div class="widget-box" style="">
 						<div class="widget-title">
 							<span class="icon"><i class="icon-th"></i></span> 
