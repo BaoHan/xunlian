@@ -67,7 +67,11 @@
       </div>
       <div class="row-fluid">
       <?php/*搜索结果列表 和之前一样 用的 data-table*/?>
-      <div id="data-list" class="span9">
+           <?php /*
+	     @ since 1.3
+	     @ 以下的class="span9" 修改为span12
+      */?>
+      <div id="data-list" class="span12">
               <div class="widget-box">
           <div class="widget-title">
              <span class="icon"><input type="checkbox" id="title-checkbox" name="title-checkbox" />
@@ -164,7 +168,11 @@
             </table>
           </div>
               </div></div>
-              <div  id="detail" class="span3">
+              <?php /*
+	              @ since 1.2
+	              这里加入了隐藏，默认不显示 
+              */?>
+              <div  id="detail" class="span3" style="display:none">
 	                <div class="widget-box" style="">
 						<div class="widget-title">
 							<span class="icon"><i class="icon-th"></i></span> 

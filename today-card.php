@@ -3,6 +3,7 @@
 	@since 1.2
 	@这个视图中所查询到的和LIST 视图一样	
 */?>
+
 <?php include 'header.php';?>
 <div id="search">
   <button title="搜索" style="color:#fff;margin-top:0;"><i class="icon-search icon-white"></i> 高级搜索</button>
@@ -81,87 +82,509 @@
       <?php/* 
         @ since 1.2
         卡片视图详细	*/?>
-      	<div class="row-fluid" style="margin:0;">
+      	<div class="row-fluid" style="margin:0;">      	
       	<?php/* 
         @ since 1.2
         @ 根据交易状态判断 添加三种class 默认是：default-c 错误是：error-c 未知是：unkonow-c 
         @ 字段方面和list表示的是一样的。
+        @ since 1.3
+        @ 增加了 <ul id="itemContainer">
+        @ 原本 div 标签换成 li
+        @ class widget-content 后面增加了 top 和 bot class 用来做样式 
         */?>
-	      <div id="plane" class="widget-box default-c">
+        <ul id="itemContainer">
+			<li id="plane" class="widget-box default-c">
 			  <div class="widget-title" >
 				  <span class="icon"><i class="icon-ok icon-white"></i></span>
 				  <h5>深圳凯莱洲际酒店</h5><h5 style="float:right;font-size:10px;">101947599</h5>
 			  </div>
-			  <div class="widget-content">
+			  <div class="widget-content top">
 				  <p>11:20:32 12月4日<span style="float:right">人民币</span></p>
 				  <p>消费<span style="float:right;font-size:36px">1,000.00</span></p>
 			  </div>
-			  <div class="widget-content">
+			  <div class="widget-content bot">
 				 <h5>移动终端<span style="float:right;">中国工商银行</span></h5>
 			  <p>12345678<span style="float:right">4323 87** **** 1234</span></p>
 			  </div>
 			  
-	      </div>
-	      <div id="plane" class="widget-box error-c">
-			  <div class="widget-title" >
-				  <span class="icon"><i class="icon-question-sign icon-white"></i></span>
-				  <h5>深圳凯莱洲际酒店</h5><h5 style="float:right;font-size:10px;">101947599</h5>
-			  </div>
-			  <div class="widget-content">
-				  <p>11:20:32 12月4日<span style="float:right">人民币</span></p>
-				  <p>消费<span style="float:right;font-size:36px">1,000.00</span></p>
-			  </div>
-			  <div class="widget-content">
-				 <h5>移动终端<span style="float:right;">中国工商银行</span></h5>
-			  <p>12345678<span style="float:right">4323 87** **** 1234</span></p>
-			  </div>
-			  
-	      </div>
-	      <div id="plane" class="widget-box error-c">
+	      </li>
+	      			<li id="plane" class="widget-box error-c">
 			  <div class="widget-title" >
 				  <span class="icon"><i class="icon-remove icon-white"></i></span>
 				  <h5>深圳凯莱洲际酒店</h5><h5 style="float:right;font-size:10px;">101947599</h5>
 			  </div>
-			  <div class="widget-content">
+			  <div class="widget-content top">
 				  <p>11:20:32 12月4日<span style="float:right">人民币</span></p>
 				  <p>消费<span style="float:right;font-size:36px">1,000.00</span></p>
 			  </div>
-			  <div class="widget-content" >
+			  <div class="widget-content bot">
 				 <h5>移动终端<span style="float:right;">中国工商银行</span></h5>
 			  <p>12345678<span style="float:right">4323 87** **** 1234</span></p>
 			  </div>
 			  
-	      </div>
-	      <div id="plane" class="widget-box unknow-c">
-			  <div class="widget-title">
-				  <span class="icon"><i class="icon-remove icon-white"></i></span>
+	      </li>
+	      <li id="plane" class="widget-box default-c">
+			  <div class="widget-title" >
+				  <span class="icon"><i class="icon-ok icon-white"></i></span>
 				  <h5>深圳凯莱洲际酒店</h5><h5 style="float:right;font-size:10px;">101947599</h5>
 			  </div>
-			  <div class="widget-content">
+			  <div class="widget-content top">
 				  <p>11:20:32 12月4日<span style="float:right">人民币</span></p>
 				  <p>消费<span style="float:right;font-size:36px">1,000.00</span></p>
 			  </div>
-			  <div class="widget-content" >
+			  <div class="widget-content bot">
 				 <h5>移动终端<span style="float:right;">中国工商银行</span></h5>
 			  <p>12345678<span style="float:right">4323 87** **** 1234</span></p>
 			  </div>
 			  
-	      </div>
+	      </li><li id="plane" class="widget-box default-c">
+			  <div class="widget-title" >
+				  <span class="icon"><i class="icon-ok icon-white"></i></span>
+				  <h5>深圳凯莱洲际酒店</h5><h5 style="float:right;font-size:10px;">101947599</h5>
+			  </div>
+			  <div class="widget-content top">
+				  <p>11:20:32 12月4日<span style="float:right">人民币</span></p>
+				  <p>消费<span style="float:right;font-size:36px">1,000.00</span></p>
+			  </div>
+			  <div class="widget-content bot">
+				 <h5>移动终端<span style="float:right;">中国工商银行</span></h5>
+			  <p>12345678<span style="float:right">4323 87** **** 1234</span></p>
+			  </div>
+			  
+	      </li><li id="plane" class="widget-box default-c">
+			  <div class="widget-title" >
+				  <span class="icon"><i class="icon-ok icon-white"></i></span>
+				  <h5>深圳凯莱洲际酒店</h5><h5 style="float:right;font-size:10px;">101947599</h5>
+			  </div>
+			  <div class="widget-content top">
+				  <p>11:20:32 12月4日<span style="float:right">人民币</span></p>
+				  <p>消费<span style="float:right;font-size:36px">1,000.00</span></p>
+			  </div>
+			  <div class="widget-content bot">
+				 <h5>移动终端<span style="float:right;">中国工商银行</span></h5>
+			  <p>12345678<span style="float:right">4323 87** **** 1234</span></p>
+			  </div>
+			  
+	      </li><li id="plane" class="widget-box default-c">
+			  <div class="widget-title" >
+				  <span class="icon"><i class="icon-ok icon-white"></i></span>
+				  <h5>深圳凯莱洲际酒店</h5><h5 style="float:right;font-size:10px;">101947599</h5>
+			  </div>
+			  <div class="widget-content top">
+				  <p>11:20:32 12月4日<span style="float:right">人民币</span></p>
+				  <p>消费<span style="float:right;font-size:36px">1,000.00</span></p>
+			  </div>
+			  <div class="widget-content bot">
+				 <h5>移动终端<span style="float:right;">中国工商银行</span></h5>
+			  <p>12345678<span style="float:right">4323 87** **** 1234</span></p>
+			  </div>
+			  
+	      </li>
+			<li id="plane" class="widget-box unknow-c">
+			  <div class="widget-title" >
+				  <span class="icon"><i class="icon-exclamation-sign icon-white"></i></span>
+				  <h5>深圳凯莱洲际酒店</h5><h5 style="float:right;font-size:10px;">101947599</h5>
+			  </div>
+			  <div class="widget-content top">
+				  <p>11:20:32 12月4日<span style="float:right">人民币</span></p>
+				  <p>消费<span style="float:right;font-size:36px">1,000.00</span></p>
+			  </div>
+			  <div class="widget-content bot">
+				 <h5>移动终端<span style="float:right;">中国工商银行</span></h5>
+			  <p>12345678<span style="float:right">4323 87** **** 1234</span></p>
+			  </div>
+			  
+	      </li><li id="plane" class="widget-box default-c">
+			  <div class="widget-title" >
+				  <span class="icon"><i class="icon-ok icon-white"></i></span>
+				  <h5>深圳凯莱洲际酒店</h5><h5 style="float:right;font-size:10px;">101947599</h5>
+			  </div>
+			  <div class="widget-content top">
+				  <p>11:20:32 12月4日<span style="float:right">人民币</span></p>
+				  <p>消费<span style="float:right;font-size:36px">1,000.00</span></p>
+			  </div>
+			  <div class="widget-content bot">
+				 <h5>移动终端<span style="float:right;">中国工商银行</span></h5>
+			  <p>12345678<span style="float:right">4323 87** **** 1234</span></p>
+			  </div>
+			  
+	      </li><li id="plane" class="widget-box default-c">
+			  <div class="widget-title" >
+				  <span class="icon"><i class="icon-ok icon-white"></i></span>
+				  <h5>深圳凯莱洲际酒店</h5><h5 style="float:right;font-size:10px;">101947599</h5>
+			  </div>
+			  <div class="widget-content top">
+				  <p>11:20:32 12月4日<span style="float:right">人民币</span></p>
+				  <p>消费<span style="float:right;font-size:36px">1,000.00</span></p>
+			  </div>
+			  <div class="widget-content bot">
+				 <h5>移动终端<span style="float:right;">中国工商银行</span></h5>
+			  <p>12345678<span style="float:right">4323 87** **** 1234</span></p>
+			  </div>
+			  
+	      </li><li id="plane" class="widget-box default-c">
+			  <div class="widget-title" >
+				  <span class="icon"><i class="icon-ok icon-white"></i></span>
+				  <h5>深圳凯莱洲际酒店</h5><h5 style="float:right;font-size:10px;">101947599</h5>
+			  </div>
+			  <div class="widget-content top">
+				  <p>11:20:32 12月4日<span style="float:right">人民币</span></p>
+				  <p>消费<span style="float:right;font-size:36px">1,000.00</span></p>
+			  </div>
+			  <div class="widget-content bot">
+				 <h5>移动终端<span style="float:right;">中国工商银行</span></h5>
+			  <p>12345678<span style="float:right">4323 87** **** 1234</span></p>
+			  </div>
+			  
+	      </li><li id="plane" class="widget-box default-c">
+			  <div class="widget-title" >
+				  <span class="icon"><i class="icon-ok icon-white"></i></span>
+				  <h5>深圳凯莱洲际酒店</h5><h5 style="float:right;font-size:10px;">101947599</h5>
+			  </div>
+			  <div class="widget-content top">
+				  <p>11:20:32 12月4日<span style="float:right">人民币</span></p>
+				  <p>消费<span style="float:right;font-size:36px">1,000.00</span></p>
+			  </div>
+			  <div class="widget-content bot">
+				 <h5>移动终端<span style="float:right;">中国工商银行</span></h5>
+			  <p>12345678<span style="float:right">4323 87** **** 1234</span></p>
+			  </div>
+			  
+	      </li><li id="plane" class="widget-box default-c">
+			  <div class="widget-title" >
+				  <span class="icon"><i class="icon-ok icon-white"></i></span>
+				  <h5>深圳凯莱洲际酒店</h5><h5 style="float:right;font-size:10px;">101947599</h5>
+			  </div>
+			  <div class="widget-content top">
+				  <p>11:20:32 12月4日<span style="float:right">人民币</span></p>
+				  <p>消费<span style="float:right;font-size:36px">1,000.00</span></p>
+			  </div>
+			  <div class="widget-content bot">
+				 <h5>移动终端<span style="float:right;">中国工商银行</span></h5>
+			  <p>12345678<span style="float:right">4323 87** **** 1234</span></p>
+			  </div>
+			  
+	      </li><li id="plane" class="widget-box default-c">
+			  <div class="widget-title" >
+				  <span class="icon"><i class="icon-ok icon-white"></i></span>
+				  <h5>深圳凯莱洲际酒店</h5><h5 style="float:right;font-size:10px;">101947599</h5>
+			  </div>
+			  <div class="widget-content top">
+				  <p>11:20:32 12月4日<span style="float:right">人民币</span></p>
+				  <p>消费<span style="float:right;font-size:36px">1,000.00</span></p>
+			  </div>
+			  <div class="widget-content bot">
+				 <h5>移动终端<span style="float:right;">中国工商银行</span></h5>
+			  <p>12345678<span style="float:right">4323 87** **** 1234</span></p>
+			  </div>
+			  
+	      </li><li id="plane" class="widget-box default-c">
+			  <div class="widget-title" >
+				  <span class="icon"><i class="icon-ok icon-white"></i></span>
+				  <h5>深圳凯莱洲际酒店</h5><h5 style="float:right;font-size:10px;">101947599</h5>
+			  </div>
+			  <div class="widget-content top">
+				  <p>11:20:32 12月4日<span style="float:right">人民币</span></p>
+				  <p>消费<span style="float:right;font-size:36px">1,000.00</span></p>
+			  </div>
+			  <div class="widget-content bot">
+				 <h5>移动终端<span style="float:right;">中国工商银行</span></h5>
+			  <p>12345678<span style="float:right">4323 87** **** 1234</span></p>
+			  </div>
+			  
+	      </li><li id="plane" class="widget-box default-c">
+			  <div class="widget-title" >
+				  <span class="icon"><i class="icon-ok icon-white"></i></span>
+				  <h5>深圳凯莱洲际酒店</h5><h5 style="float:right;font-size:10px;">101947599</h5>
+			  </div>
+			  <div class="widget-content top">
+				  <p>11:20:32 12月4日<span style="float:right">人民币</span></p>
+				  <p>消费<span style="float:right;font-size:36px">1,000.00</span></p>
+			  </div>
+			  <div class="widget-content bot">
+				 <h5>移动终端<span style="float:right;">中国工商银行</span></h5>
+			  <p>12345678<span style="float:right">4323 87** **** 1234</span></p>
+			  </div>
+			  
+	      </li><li id="plane" class="widget-box default-c">
+			  <div class="widget-title" >
+				  <span class="icon"><i class="icon-ok icon-white"></i></span>
+				  <h5>深圳凯莱洲际酒店</h5><h5 style="float:right;font-size:10px;">101947599</h5>
+			  </div>
+			  <div class="widget-content top">
+				  <p>11:20:32 12月4日<span style="float:right">人民币</span></p>
+				  <p>消费<span style="float:right;font-size:36px">1,000.00</span></p>
+			  </div>
+			  <div class="widget-content bot">
+				 <h5>移动终端<span style="float:right;">中国工商银行</span></h5>
+			  <p>12345678<span style="float:right">4323 87** **** 1234</span></p>
+			  </div>
+			  
+	      </li><li id="plane" class="widget-box unknow-c">
+			  <div class="widget-title" >
+				  <span class="icon"><i class="icon-ok icon-white"></i></span>
+				  <h5>深圳凯莱洲际酒店</h5><h5 style="float:right;font-size:10px;">101947599</h5>
+			  </div>
+			  <div class="widget-content top">
+				  <p>11:20:32 12月4日<span style="float:right">人民币</span></p>
+				  <p>消费<span style="float:right;font-size:36px">1,000.00</span></p>
+			  </div>
+			  <div class="widget-content bot">
+				 <h5>移动终端<span style="float:right;">中国工商银行</span></h5>
+			  <p>12345678<span style="float:right">4323 87** **** 1234</span></p>
+			  </div>
+			  
+	      </li><li id="plane" class="widget-box default-c">
+			  <div class="widget-title" >
+				  <span class="icon"><i class="icon-ok icon-white"></i></span>
+				  <h5>深圳凯莱洲际酒店</h5><h5 style="float:right;font-size:10px;">101947599</h5>
+			  </div>
+			  <div class="widget-content top">
+				  <p>11:20:32 12月4日<span style="float:right">人民币</span></p>
+				  <p>消费<span style="float:right;font-size:36px">1,000.00</span></p>
+			  </div>
+			  <div class="widget-content bot">
+				 <h5>移动终端<span style="float:right;">中国工商银行</span></h5>
+			  <p>12345678<span style="float:right">4323 87** **** 1234</span></p>
+			  </div>
+			  
+	      </li><li id="plane" class="widget-box default-c">
+			  <div class="widget-title" >
+				  <span class="icon"><i class="icon-ok icon-white"></i></span>
+				  <h5>深圳凯莱洲际酒店</h5><h5 style="float:right;font-size:10px;">101947599</h5>
+			  </div>
+			  <div class="widget-content top">
+				  <p>11:20:32 12月4日<span style="float:right">人民币</span></p>
+				  <p>消费<span style="float:right;font-size:36px">1,000.00</span></p>
+			  </div>
+			  <div class="widget-content bot">
+				 <h5>移动终端<span style="float:right;">中国工商银行</span></h5>
+			  <p>12345678<span style="float:right">4323 87** **** 1234</span></p>
+			  </div>
+			  
+	      </li><li id="plane" class="widget-box error-c">
+			  <div class="widget-title" >
+				  <span class="icon"><i class="icon-ok icon-white"></i></span>
+				  <h5>深圳凯莱洲际酒店</h5><h5 style="float:right;font-size:10px;">101947599</h5>
+			  </div>
+			  <div class="widget-content top">
+				  <p>11:20:32 12月4日<span style="float:right">人民币</span></p>
+				  <p>消费<span style="float:right;font-size:36px">1,000.00</span></p>
+			  </div>
+			  <div class="widget-content bot">
+				 <h5>移动终端<span style="float:right;">中国工商银行</span></h5>
+			  <p>12345678<span style="float:right">4323 87** **** 1234</span></p>
+			  </div>
+			  
+	      </li><li id="plane" class="widget-box error-c">
+			  <div class="widget-title" >
+				  <span class="icon"><i class="icon-ok icon-white"></i></span>
+				  <h5>深圳凯莱洲际酒店</h5><h5 style="float:right;font-size:10px;">101947599</h5>
+			  </div>
+			  <div class="widget-content top">
+				  <p>11:20:32 12月4日<span style="float:right">人民币</span></p>
+				  <p>消费<span style="float:right;font-size:36px">1,000.00</span></p>
+			  </div>
+			  <div class="widget-content bot">
+				 <h5>移动终端<span style="float:right;">中国工商银行</span></h5>
+			  <p>12345678<span style="float:right">4323 87** **** 1234</span></p>
+			  </div>
+			  
+	      </li></li><li id="plane" class="widget-box default-c">
+			  <div class="widget-title" >
+				  <span class="icon"><i class="icon-ok icon-white"></i></span>
+				  <h5>深圳凯莱洲际酒店</h5><h5 style="float:right;font-size:10px;">101947599</h5>
+			  </div>
+			  <div class="widget-content top">
+				  <p>11:20:32 12月4日<span style="float:right">人民币</span></p>
+				  <p>消费<span style="float:right;font-size:36px">1,000.00</span></p>
+			  </div>
+			  <div class="widget-content bot">
+				 <h5>移动终端<span style="float:right;">中国工商银行</span></h5>
+			  <p>12345678<span style="float:right">4323 87** **** 1234</span></p>
+			  </div>
+			  
+	      </li><li id="plane" class="widget-box default-c">
+			  <div class="widget-title" >
+				  <span class="icon"><i class="icon-ok icon-white"></i></span>
+				  <h5>深圳凯莱洲际酒店</h5><h5 style="float:right;font-size:10px;">101947599</h5>
+			  </div>
+			  <div class="widget-content top">
+				  <p>11:20:32 12月4日<span style="float:right">人民币</span></p>
+				  <p>消费<span style="float:right;font-size:36px">1,000.00</span></p>
+			  </div>
+			  <div class="widget-content bot">
+				 <h5>移动终端<span style="float:right;">中国工商银行</span></h5>
+			  <p>12345678<span style="float:right">4323 87** **** 1234</span></p>
+			  </div>
+			  
+	      </li><li id="plane" class="widget-box error-c">
+			  <div class="widget-title" >
+				  <span class="icon"><i class="icon-ok icon-white"></i></span>
+				  <h5>深圳凯莱洲际酒店</h5><h5 style="float:right;font-size:10px;">101947599</h5>
+			  </div>
+			  <div class="widget-content top">
+				  <p>11:20:32 12月4日<span style="float:right">人民币</span></p>
+				  <p>消费<span style="float:right;font-size:36px">1,000.00</span></p>
+			  </div>
+			  <div class="widget-content bot">
+				 <h5>移动终端<span style="float:right;">中国工商银行</span></h5>
+			  <p>12345678<span style="float:right">4323 87** **** 1234</span></p>
+			  </div>
+			  
+	      </li><li id="plane" class="widget-box error-c">
+			  <div class="widget-title" >
+				  <span class="icon"><i class="icon-ok icon-white"></i></span>
+				  <h5>深圳凯莱洲际酒店</h5><h5 style="float:right;font-size:10px;">101947599</h5>
+			  </div>
+			  <div class="widget-content top">
+				  <p>11:20:32 12月4日<span style="float:right">人民币</span></p>
+				  <p>消费<span style="float:right;font-size:36px">1,000.00</span></p>
+			  </div>
+			  <div class="widget-content bot">
+				 <h5>移动终端<span style="float:right;">中国工商银行</span></h5>
+			  <p>12345678<span style="float:right">4323 87** **** 1234</span></p>
+			  </div>
+			  
+	      </li><li id="plane" class="widget-box default-c">
+			  <div class="widget-title" >
+				  <span class="icon"><i class="icon-ok icon-white"></i></span>
+				  <h5>深圳凯莱洲际酒店</h5><h5 style="float:right;font-size:10px;">101947599</h5>
+			  </div>
+			  <div class="widget-content top">
+				  <p>11:20:32 12月4日<span style="float:right">人民币</span></p>
+				  <p>消费<span style="float:right;font-size:36px">1,000.00</span></p>
+			  </div>
+			  <div class="widget-content bot">
+				 <h5>移动终端<span style="float:right;">中国工商银行</span></h5>
+			  <p>12345678<span style="float:right">4323 87** **** 1234</span></p>
+			  </div>
+			  
+	      </li><li id="plane" class="widget-box default-c">
+			  <div class="widget-title" >
+				  <span class="icon"><i class="icon-ok icon-white"></i></span>
+				  <h5>深圳凯莱洲际酒店</h5><h5 style="float:right;font-size:10px;">101947599</h5>
+			  </div>
+			  <div class="widget-content top">
+				  <p>11:20:32 12月4日<span style="float:right">人民币</span></p>
+				  <p>消费<span style="float:right;font-size:36px">1,000.00</span></p>
+			  </div>
+			  <div class="widget-content bot">
+				 <h5>移动终端<span style="float:right;">中国工商银行</span></h5>
+			  <p>12345678<span style="float:right">4323 87** **** 1234</span></p>
+			  </div>
+			  
+	      </li><li id="plane" class="widget-box default-c">
+			  <div class="widget-title" >
+				  <span class="icon"><i class="icon-ok icon-white"></i></span>
+				  <h5>深圳凯莱洲际酒店</h5><h5 style="float:right;font-size:10px;">101947599</h5>
+			  </div>
+			  <div class="widget-content top">
+				  <p>11:20:32 12月4日<span style="float:right">人民币</span></p>
+				  <p>消费<span style="float:right;font-size:36px">1,000.00</span></p>
+			  </div>
+			  <div class="widget-content bot">
+				 <h5>移动终端<span style="float:right;">中国工商银行</span></h5>
+			  <p>12345678<span style="float:right">4323 87** **** 1234</span></p>
+			  </div>
+			  
+	      </li><li id="plane" class="widget-box default-c">
+			  <div class="widget-title" >
+				  <span class="icon"><i class="icon-ok icon-white"></i></span>
+				  <h5>深圳凯莱洲际酒店</h5><h5 style="float:right;font-size:10px;">101947599</h5>
+			  </div>
+			  <div class="widget-content top">
+				  <p>11:20:32 12月4日<span style="float:right">人民币</span></p>
+				  <p>消费<span style="float:right;font-size:36px">1,000.00</span></p>
+			  </div>
+			  <div class="widget-content bot">
+				 <h5>移动终端<span style="float:right;">中国工商银行</span></h5>
+			  <p>12345678<span style="float:right">4323 87** **** 1234</span></p>
+			  </div>
+			  
+	      </li><li id="plane" class="widget-box default-c">
+			  <div class="widget-title" >
+				  <span class="icon"><i class="icon-ok icon-white"></i></span>
+				  <h5>深圳凯莱洲际酒店</h5><h5 style="float:right;font-size:10px;">101947599</h5>
+			  </div>
+			  <div class="widget-content top">
+				  <p>11:20:32 12月4日<span style="float:right">人民币</span></p>
+				  <p>消费<span style="float:right;font-size:36px">1,000.00</span></p>
+			  </div>
+			  <div class="widget-content bot">
+				 <h5>移动终端<span style="float:right;">中国工商银行</span></h5>
+			  <p>12345678<span style="float:right">4323 87** **** 1234</span></p>
+			  </div>
+			  
+	      </li><li id="plane" class="widget-box default-c">
+			  <div class="widget-title" >
+				  <span class="icon"><i class="icon-ok icon-white"></i></span>
+				  <h5>深圳凯莱洲际酒店</h5><h5 style="float:right;font-size:10px;">101947599</h5>
+			  </div>
+			  <div class="widget-content top">
+				  <p>11:20:32 12月4日<span style="float:right">人民币</span></p>
+				  <p>消费<span style="float:right;font-size:36px">1,000.00</span></p>
+			  </div>
+			  <div class="widget-content bot">
+				 <h5>移动终端<span style="float:right;">中国工商银行</span></h5>
+			  <p>12345678<span style="float:right">4323 87** **** 1234</span></p>
+			  </div>
+			  
+	      </li><li id="plane" class="widget-box default-c">
+			  <div class="widget-title" >
+				  <span class="icon"><i class="icon-ok icon-white"></i></span>
+				  <h5>深圳凯莱洲际酒店</h5><h5 style="float:right;font-size:10px;">101947599</h5>
+			  </div>
+			  <div class="widget-content top">
+				  <p>11:20:32 12月4日<span style="float:right">人民币</span></p>
+				  <p>消费<span style="float:right;font-size:36px">1,000.00</span></p>
+			  </div>
+			  <div class="widget-content bot">
+				 <h5>移动终端<span style="float:right;">中国工商银行</span></h5>
+			  <p>12345678<span style="float:right">4323 87** **** 1234</span></p>
+			  </div>
+			  
+	      </li><li id="plane" class="widget-box default-c">
+			  <div class="widget-title" >
+				  <span class="icon"><i class="icon-ok icon-white"></i></span>
+				  <h5>深圳凯莱洲际酒店</h5><h5 style="float:right;font-size:10px;">101947599</h5>
+			  </div>
+			  <div class="widget-content top">
+				  <p>11:20:32 12月4日<span style="float:right">人民币</span></p>
+				  <p>消费<span style="float:right;font-size:36px">1,000.00</span></p>
+			  </div>
+			  <div class="widget-content bot">
+				 <h5>移动终端<span style="float:right;">中国工商银行</span></h5>
+			  <p>12345678<span style="float:right">4323 87** **** 1234</span></p>
+			  </div>
+			  
+	      </li><li id="plane" class="widget-box default-c">
+			  <div class="widget-title" >
+				  <span class="icon"><i class="icon-ok icon-white"></i></span>
+				  <h5>深圳凯莱洲际酒店</h5><h5 style="float:right;font-size:10px;">101947599</h5>
+			  </div>
+			  <div class="widget-content top">
+				  <p>11:20:32 12月4日<span style="float:right">人民币</span></p>
+				  <p>消费<span style="float:right;font-size:36px">1,000.00</span></p>
+			  </div>
+			  <div class="widget-content bot">
+				 <h5>移动终端<span style="float:right;">中国工商银行</span></h5>
+			  <p>12345678<span style="float:right">4323 87** **** 1234</span></p>
+			  </div>
+			  
+	      </li>
+
+	              <ul>
       	</div>
       	<?php/* 
         @ since 1.2
         @ 这里是翻页样式，每页15个结果。
+        @ since 1.3
+        @ 将原本UL和LI标签删除 ，改为 div.holder 自动生成页码
         */?> 
       	<div class="pagination alternate" style="text-align:center">
       	<p>当前显示 1 到 15 条，共 35 条记录</p>
-              <ul>
-                <li class="disabled"><a href="#">上一页</a></li>
-                <li class="active"> <a href="#">1</a> </li>
-                <li><a href="#">2</a></li>
-                <li><a href="#">3</a></li>
-                <li><a href="#">4</a></li>
-                <li><a href="#">下一页</a></li>
-              </ul>
+      	<div class="holder"></div>
             </div>
       </div>
       
@@ -279,10 +702,19 @@
 <div class="row-fluid">
       <div id="footer" class="span12">&copy; 2013 <a href="http://#">上海讯联数据服务有限公司</a> 版权所有  |  <a href="http://#">联系方式</a></div>
 </div>
+
+
+
 <script src="js/jquery.min.js"></script> 
 <script src="js/jquery.ui.custom.js"></script>
 <script src="js/maruti.js"></script> 
 <script src="js/bootstrap.min.js"></script> 
+<?php /*
+	@since 1.3
+	@加入css 和js*/?>
+<link rel="stylesheet" href="css/animate.css">
+<script src="js/jPages.min.js"></script>
+
 <?php /*本页面的JS*/?>
 <script src="js/jquery.uniform.js"></script> 
 <script src="js/select2.min.js"></script> 

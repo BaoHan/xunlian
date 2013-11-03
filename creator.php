@@ -12,7 +12,7 @@
 </div>
 <div id="content">
   <div id="content-header">
-    <div id="breadcrumb"><a href="#" class="current">商户管理</a> </div>
+    <div id="breadcrumb"><a href="#" class="current">账户管理</a> </div>
   </div>
   <div class="container-fluid">
     <div class="row-fluid">
@@ -55,8 +55,66 @@
           <div class="widget-title">
              <span class="icon"><i class="icon-th"></i>
             </span> 
-            <h5>账户列表</h5><div class="buttons" style="float:left !important;"><a  href="#myArrange" data-toggle="modal" class="btn btn-mini">+</a></div>
-            <div id="myArrange" class="modal hide" aria-hidden="true" style="display: none;">
+            <h5>账户列表</h5><div class="buttons" style="float:left !important;"><a  href="#jigou" data-toggle="modal" class="btn btn-mini">+ 创建机构账户</a></div><div class="buttons" style="float:left !important;"><a  href="#daili" data-toggle="modal" class="btn btn-mini">+ 创建代理账户</a></div>
+            <div id="jigou" class="modal hide" aria-hidden="true" style="display: none;">
+              <div class="modal-header">
+                <button data-dismiss="modal" class="close" type="button">×</button>
+                <h3>创建机构账户</h3>
+              </div>
+              <div class="modal-body">
+               	<form class="form-horizontal" method="post" action="#" name="basic_validate" id="basic_validate" novalidate="novalidate">
+                                    <div class="control-group">
+                                        <label class="control-label">机构代码</label>
+                                        <div class="controls">
+                                            <input type="text">
+                                        </div>
+                                    </div>
+                                     <div class="control-group">
+                                        <label class="control-label">机构名称</label>
+                                        <div class="controls">
+                                            <input type="text" >
+                                            
+                                        </div>
+                                    </div>
+                                        <div class="control-group">
+                                        <label class="control-label">机构地区</label>
+                                        <div class="controls">
+                                            <input type="text" >
+                                            
+                                        </div>
+                                        </div>
+                                        <div class="control-group">
+                                          <label class="control-label">扣率</label>
+                                        <div class="controls">
+                                            <input type="text" >
+                                            
+                                        </div>
+                                        </div>
+                                        <div class="control-group">
+                                          <label class="control-label">联系人</label>
+                                        <div class="controls">
+                                            <input type="text" >
+                                        </div>   
+                                        </div>
+                                        <div class="control-group">
+                                          <label class="control-label">电话</label>
+                                        <div class="controls">
+                                            <input type="text" >                                           
+                                        </div>
+                                        </div>
+                                        <div class="control-group">
+                                          <label class="control-label">邮箱</label>
+                                        <div class="controls">
+                                            <input type="text" >                                           
+                                        </div>
+                                        
+                                    </div>                                    
+                                </form>
+               
+               </div>
+              <div class="modal-footer"> <a data-dismiss="modal" class="btn btn-primary" href="#">确定</a> <a data-dismiss="modal" class="btn" href="#">取消</a> </div>
+            </div>
+            <div id="daili" class="modal hide" aria-hidden="true" style="display: none;">
               <div class="modal-header">
                 <button data-dismiss="modal" class="close" type="button">×</button>
                 <h3>创建代理账户</h3>

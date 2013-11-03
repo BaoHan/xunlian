@@ -25,15 +25,17 @@
 <?php /*除了首页和个人设置页面 出现表格加载如下*/?>
 <link rel="stylesheet" href="css/uniform.css" />
 <link rel="stylesheet" href="css/select2.css" />
-
-
 </head>
 <body>
 
 <!--Header-part-->
 <div id="header">
-	<?php /*判断是否有LOGO图片，如果没有显示如下文字*/?>
-  <h3 style="padding:10px 0 0 10px;color:#fff;">收单服务平台</h3>
+	<?php /*判断是否有LOGO图片，如果没有显示如下文字
+		
+		@since 1.3 删除了下面color 样式 
+	*/?>
+	
+  <h3 style="padding:10px 0 0 10px;">收单服务平台</h3>
 </div>
 <!--close-Header-part--> 
 

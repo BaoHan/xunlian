@@ -3,8 +3,21 @@ body {
 }
 
 #header {
-	background-color: #2e363f;
+	text-shadow: 0 1px 0 #fff;
+
+background: #eff1f4;
+background: -webkit-linear-gradient(#f7f8fa,#dcdee1);
+background: -moz-linear-gradient(#f7f8fa,#dcdee1);
+background: -ms-linear-gradient(#f7f8fa,#dcdee1);
+background: -o-linear-gradient(#f7f8fa,#dcdee1);
+background: linear-gradient(#f7f8fa,#dcdee1);
+-webkit-box-shadow: inset 0 1px 0 white;
+-moz-box-shadow: inset 0 1px 0 white;
+-ms-box-shadow: inset 0 1px 0 white;
+-o-box-shadow: inset 0 1px 0 white;
+box-shadow: inset 0 1px 0 white;
    margin-top:10px;
+   color:#555;
 }
 
 #search input[type=text] {
@@ -23,13 +36,13 @@ body {
 .rightzero{ right:0px; display:none;}
 @media (max-width: 480px) {
 	#sidebar > a {
-		background:#49CCED;
+		
 		
 	}
 	#sidebar > ul {
-		background-color: #49CCED;
+		background-color: #74b9e0;
 	}
-#user-nav{ margin:0px auto; top:-31px; border-top:none; width:250px; left:-3%; text-align:center; float:none;}
+#user-nav{ margin:0px auto; top:-31px; border-top:none; width:250px; left:-3%; text-align:right; float:none;}
 #user-nav > ul > li:last-child{ border-right:1px solid #363E48}
 #user-nav > ul > li{ border-top:1px solid #363E48}
 #sidebar{ top:-30px;}

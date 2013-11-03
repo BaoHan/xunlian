@@ -6,6 +6,35 @@ $(document).ready(function(){	$("#search button").click(function(){
 	 $("#search-box").fadeOut("slow"); 
   };
   });
+
+
+    /* initiate plugin assigning the desired button labels  */
+   $(function(){
+
+	/* initiate the plugin */
+	$("div.holder").jPages({
+		containerID  : "itemContainer",
+		first: '首页',
+		last: '尾页',
+		previous: '上页',
+		next: '下页',
+		perPage: 15,
+		startPage: 1,
+		startRange: 2,
+		midRange: 3,
+		endRange: 2,
+		animation: 'bounceInUp',
+		keyBrowse: true,
+		callback    : function( pages, items ){
+			/* lazy load current images */
+			items.showing.find("img").trigger("turnPage");
+			/* lazy load next page images */
+			items.oncoming.find("img").trigger("turnPage");
+		}
+	});
+
+});
+
   
   $("#close-detail").click(function(){
   $("#data-list").removeClass("span9");
