@@ -31,11 +31,11 @@
     */?>
 
       <div id="data-list" class="span12">
-      	 <?php/* 
+      	 <?php /* 
         @ since 1.2
         卡片视图详细	*/?>
       	<div class="row-fluid" style="margin:0;">
-      	<?php/* 
+      	<?php /* 
         @ since 1.2
         @ 根据交易状态判断 添加三种class 默认是：default-c 错误是：error-c 未知是：unkonow-c 
         @ 字段方面和list表示的是一样的。
@@ -108,7 +108,7 @@
 	      </li>
         </ul>
       	</div>
-      	<?php/* 
+      	<?php /* 
         @ since 1.2
         @ 这里是翻页样式，每页15个结果。
         @ since 1.3

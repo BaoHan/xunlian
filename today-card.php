@@ -1,4 +1,4 @@
-<?php/*
+<?php /*
 	今日交易 卡片视图 页面
 	@since 1.2
 	@这个视图中所查询到的和LIST 视图一样	
@@ -14,7 +14,7 @@
   	<div id="content-header">
     <div id="breadcrumb"><a href="#" class="current">今日交易</a>
         </div>
-        <?php/* 
+        <?php /* 
         @ since 1.2
         @ 新增了视图切换下拉菜单	*/?>
      <div class="btn-group" style="top: -18px;left: 75px;">
@@ -40,7 +40,7 @@
           <div class="control-group span4">
 										<label class="control-label">交易金额：</label>
 										<div class="controls">
-<select><?php/*搜索金额条件*/?>
+<select><?php /*搜索金额条件*/?>
 				<option>全 部</option>
 				<option>[100.00]–[1,000.00]</option>
 				<option>[1,000.00]–[5,000.00]</option>
@@ -53,7 +53,7 @@
 										<label class="control-label">交易类型：</label>
 										<div class="controls">
 
-<select multiple><?php/*多选的搜索字段*/?>
+<select multiple><?php /*多选的搜索字段*/?>
 				<option>全 部</option>								
 				<option>消费</option>
 				<option>消费撤销类</option>
@@ -79,11 +79,11 @@
       </div>
       <div class="row-fluid">
       <div id="data-list" class="span12">
-      <?php/* 
+      <?php /* 
         @ since 1.2
         卡片视图详细	*/?>
       	<div class="row-fluid" style="margin:0;">      	
-      	<?php/* 
+      	<?php /* 
         @ since 1.2
         @ 根据交易状态判断 添加三种class 默认是：default-c 错误是：error-c 未知是：unkonow-c 
         @ 字段方面和list表示的是一样的。
@@ -574,9 +574,9 @@
 			  
 	      </li>
 
-	              <ul>
+	              </ul>
       	</div>
-      	<?php/* 
+      	<?php /* 
         @ since 1.2
         @ 这里是翻页样式，每页15个结果。
         @ since 1.3

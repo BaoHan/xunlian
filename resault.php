@@ -1,4 +1,4 @@
-<?php/*
+<?php /*
 	查询结果页面
 	
 	
@@ -51,7 +51,7 @@
                   <th>交易结果</th>
                 </tr>
               </thead>
-              <?php/*
+              <?php /*
 	              根据查询过滤器。
 				  查询表为：历史记录查 TBL_TRANS_SETT_HISTORY_A，TBL_TRANS_SETT_HISTORY_B表
 				  默认查询字段：今天的时间
@@ -72,7 +72,7 @@
                   <td><small>CARD_BRAND</small><br/>ACCT_NUM</td>
                   <td><small>（如果结果为00则显示icon-ok，如果不为0，则显示-还没做。。）<i class="icon-ok"></i> RESP_AUTH_CODE</small><br/>RESP_AUTH_CODE</td>
                 </tr>
-              */?>
+              */ ?>
 
               <tbody>
                 <tr>
@@ -414,7 +414,7 @@
 							</div>
 							<div class="widget-content nopadding">
 								<table class="table table-bordered">
-								<a href="<?php /*这个是个下载链接，至今字段不明*/?>" class="btn btn-large btn-block">导出为CSV文件</a>
+								<a href="<?php /*这个是个下载链接，至今字段不明*/ ?>" class="btn btn-large btn-block">导出为CSV文件</a>
 
 									<thead>
 										<tr>

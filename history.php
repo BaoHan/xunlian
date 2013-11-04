@@ -18,7 +18,7 @@
           <div class="widget-title">
              <span class="icon"><i class="icon-th"></i></span> 
             <h5>历史交易搜索</h5>
-            <div class="buttons"><a <?php/*按下此键跳转resault显示结果*/?> href="resault.php" class="btn btn-mini btn-primary">开始搜索</a></div>
+            <div class="buttons"><a <?php /*按下此键跳转resault显示结果*/?> href="resault.php" class="btn btn-mini btn-primary">开始搜索</a></div>
              </div>
           <div class="widget-content">
           	<div class="row-fluid">
@@ -28,29 +28,29 @@
 					  	  <div class="control-group">
                                         <label class="control-label">开始日期：</label>
                                         <div class="controls">
-                                            <input type="text" data-date="2013-01-02" data-date-format="yyyy-mm-dd" value="2013-01-02" class="datepicker" /><small>（必选）</small><?php/* 判断 为空则报错*/?>
+                                            <input type="text" data-date="2013-01-02" data-date-format="yyyy-mm-dd" value="2013-01-02" class="datepicker" /><small>（必选）</small><?php /* 判断 为空则报错*/?>
                                         </div>
                                     </div>
                                     <div class="control-group">
                                         <label class="control-label">结束日期：</label>
                                         <div class="controls">
-                                            <input type="text" data-date="<?php/*默认今天*/?>2013-01-02" data-date-format="yyyy-mm-dd" value="<?php/*获得今天日期*/?>" class="datepicker" /><small>（必选）</small><?php/* 判断 为空则报错*/?>
+                                            <input type="text" data-date="<?php/*默认今天*/?>2013-01-02" data-date-format="yyyy-mm-dd" value="<?php /*获得今天日期*/ ?>" class="datepicker" /><small>（必选）</small><?php /* 判断 为空则报错*/?>
                                         </div>
                                     </div>
 							 <div class="control-group">
 										<label class="control-label">商户名称/代码：</label>
 										<div class="controls">
-											<input type="text"  placeholder="输入商户名称或代码"/><?php/* 判断 数字15为查商户代码 如果非数字查商户名称。精确搜索*/?>
+											<input type="text"  placeholder="输入商户名称或代码"/><?php /* 判断 数字15为查商户代码 如果非数字查商户名称。精确搜索*/?>
 										</div>
 									</div>
 								<div class="control-group">
-										<label class="control-label">交易跟踪号：<?php/* 判断 判断数字6位，不是则报错*/?></label>
+										<label class="control-label">交易跟踪号：<?php /* 判断 判断数字6位，不是则报错*/?></label>
 										<div class="controls">
 											<input type="text"  placeholder=""/>
 										</div>
 									</div>
 								<div class="control-group">
-										<label class="control-label">卡号后四位：<?php/* 判断 判断数字4位，不是则报错*/?></label>
+										<label class="control-label">卡号后四位：<?php /* 判断 判断数字4位，不是则报错*/?></label>
 										<div class="controls">
 											<input type="text"  placeholder=""/>
 										</div>

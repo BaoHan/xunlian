@@ -1,8 +1,6 @@
 <?php/*
 	今日交易 页面
-	
 	这个页面中所有查询，需要通过查询过滤器。根据权限，将搜索变成默认搜索。
-	
 */?>
 <?php include 'header.php';?>
 <div id="search">
@@ -88,7 +86,7 @@
               <div class="widget-box">
           <div class="widget-title">
              <span class="icon"><i class="icon-th"></i></span> 
-            <h5>今日交易 <?php/*获得今天的日期，格式如后方*/?>2013/05/11 星期三</h5>
+            <h5>今日交易 <?php /*获得今天的日期，格式如后方*/?>2013/05/11 星期三</h5>
           </div>
           <div class="widget-content nopadding">
             <table class="table table-bordered data-table">
@@ -103,7 +101,7 @@
                   <th>交易结果</th>
                 </tr>
               </thead>
-              <?php/*
+              <?php /*
 	              根据查询过滤器。
 				  查询表为：TBL_DIRECT_POS_A，TBL_DIRECT_POS_B
 				  默认查询字段：今天的时间
@@ -130,11 +128,6 @@
                   } else{
                   <i class="icon-remove"></i> echo $resault
                   }
-               
-                  
-                  
-                  
-                  
                   （如果结果为00则显示icon-ok，如果不为0，则显示-还没做。。）<i class="icon-ok"></i> RESP_AUTH_CODE</small><br/>RESP_AUTH_CODE</td>
                 </tr>
               */ ?>
@@ -462,9 +455,8 @@
 	              以下为详细信息页面。
 	              需要做个JQUERY或者php的ajax刷新。
 	              当点击以上<TR>标签，将详细信息传值给详细信息框。
-	              JQUERY 还需要做个，当点击该<tr>时，高亮显示。
-	              
-              */?>
+	              JQUERY 还需要做个，当点击该<tr>时，高亮显示。             
+              */ ?>
               <?php /*
 	              @ since 1.2
 	              这里加入了隐藏，默认不显示 style="display:none"
