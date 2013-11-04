@@ -58,6 +58,16 @@
     <li> <a href="history.php"><i class="icon icon-search"></i> <span>历史交易</span></a> </li>    
     <li> <a href="report.php"><i class="icon icon-download-alt"></i> <span>报表下载</span></a> </li>
     <li> <a href="arrange.php"><i class="icon icon-edit"></i> <span>商户管理</span></a> </li>
-    <li> <a href="creator.php"><i class="icon icon-user"></i> <span>账户管理</span></a> </li>
+    <?php /*
+    	@ since 1.4
+	    @ 新增权限管理页面
+    */?>
+    <li class="submenu"> <a href="#"><i class="icon icon-user"></i> <span>账户管理</span></a>
+      <ul>
+        <li><a href="creator-jigou.php">机构账户管理</a></li>
+        <li><a href="creator-daili.php">代理账户管理</a></li>
+        <li><a href="creator-shanghu.php">商户账户管理</a></li>
+      </ul>
+    </li>
   </ul>
 </div>
