@@ -122,7 +122,8 @@
 										</tr>
 										<tr>
 											<td>预授权完成交易量</td>
-											<td>笔数</td>
+											<?php /*since 1.4.1*/?>
+											<td>元 （人民币）</td>
 											<td style="text-align:right;">2460</td>
 										</tr>
 										<tr>
