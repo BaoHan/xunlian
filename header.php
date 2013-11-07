@@ -69,5 +69,15 @@
         <li><a href="creator-shanghu.php">商户账户管理</a></li>
       </ul>
     </li>
+     <?php /*
+    	@ since 1.5
+	    @ 新增其他菜单
+    */?>
+    <li class="submenu"> <a href="#"><i class="icon icon-plus"></i> <span>其他</span></a> 
+    	<ul>
+        <li><a href="search-yingda.php">应答码查询</a></li>
+        <li><a href="search-hanghao.php">银行行号查询</a></li>
+      </ul>
+    </li>
   </ul>
 </div>

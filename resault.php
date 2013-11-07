@@ -1,12 +1,20 @@
 <?php /*
 	查询结果页面
-	
-	
 	*/?>
 <?php include 'header.php';?>
+<?php /*
+	    @ since 1.5
+	    @ 新增历史查询CSV下载按钮
+	    @ CSV 导出在指定日期内 清算标识为：清算  的交易
+    */?>
+<div id="search">
+  <button href="" title="CSV下载" style="color:#fff;margin-top:0;"><a href="#" style="color:#fff;"><i class="icon-download icon-white"></i> CSV下载</a></button>
+</div>
+
 <div id="content">
   <div id="content-header">
-    <div id="breadcrumb"><a href="history.php" class="current">交易查询</a>    </div>
+    <div id="breadcrumb"><a href="history.php" class="current">交易查询</a> 
+     </div>
     <?php /*
 	    @ since 1.2
 	    @ 删除查询结果的 a 标签
@@ -24,7 +32,7 @@
   <div class="container-fluid">
     <div class="row-fluid">
       <div class="span12">
-     
+		  
       <div class="row-fluid">
       <?php /*
 	    @ since 1.2
@@ -32,6 +40,7 @@
     */?>
 
       <div id="data-list" class="span12">
+      
               <div class="widget-box">
           <div class="widget-title">
              <span class="icon"><i class="icon-th"></i></span> 

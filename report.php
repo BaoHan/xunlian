@@ -1,9 +1,13 @@
-<?php/*
+<?php /*
 				清算报表日期
 	              根据查询过滤器。
 				  查询表为：TBL_SETTLE_FILE 
 				  排序方式：按最新清算时间
 				  *******
+				  
+				  
+				  @ since 1.5
+				  @ 需要解决报表不能下载的问题
 	              */?>
 <?php include 'header.php';?>
 <div id="content">
@@ -50,7 +54,10 @@
                   <td>2013/04/12</td>
                   <td>200004555</td>
                   <td>未知名称</td>
-                  <td><a href="#" class="btn"><i class="icon-download"></i> 下载</a></td>
+                  <?php /*
+	                  @ since 1.5
+	                  @ 当报表的DOWNLOAD_STATUS值为1时报表是不能下载，在下载按钮中加入class disabled 。                  */ ?>
+                  <td><a href="#" class="btn disabled"><i class="icon-download"></i> 下载</a></td>
                 </tr><tr>
                   <td><input type="checkbox" /></td>
                   <td>2013/04/10</td>
@@ -68,13 +75,13 @@
                   <td>2013/04/08</td><td>2013/04/10</td>
                   <td>124224875</td>
                   <td>未知名称</td>
-                  <td><a href="#" class="btn"><i class="icon-download"></i> 下载</a></td>
+                  <td><a href="#" class="btn disabled"><i class="icon-download"></i> 下载</a></td>
                 </tr><tr>
                   <td><input type="checkbox" /></td>
                   <td>2013/04/07</td><td>2013/04/10</td>
                   <td>121555875</td>
                   <td>未知名称</td>
-                  <td><a href="#" class="btn"><i class="icon-download"></i> 下载</a></td>
+                  <td><a href="#" class="btn disabled"><i class="icon-download"></i> 下载</a></td>
                 </tr><tr>
                   <td><input type="checkbox" /></td>
                   <td>2013/04/12</td><td>2013/04/10</td>
