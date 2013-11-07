@@ -8,7 +8,7 @@
 <?php include 'header.php';?>
 <div id="content">
   <div id="content-header">
-    <div id="breadcrumb"><a href="#" class="current">应答码查询</a> </div>
+    <div id="breadcrumb"><a href="#" class="current">银行行号查询</a> </div>
   </div>
   <div class="container-fluid">
     <div class="row-fluid">
@@ -16,7 +16,7 @@
       	<div class="widget-box">
           <div class="widget-title">
              <span class="icon"><i class="icon-th"></i></span> 
-            <h5>查询应答码</h5>
+            <h5>查询银行行号</h5>
             <div class="buttons"><a <?php /*按下此键跳转resault显示结果*/?> href="" class="btn btn-mini btn-primary">开始搜索</a></div>
              </div>
           <div class="widget-content">

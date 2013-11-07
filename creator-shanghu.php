@@ -74,13 +74,13 @@
                                     <div class="control-group">
                                         <label class="control-label">商户代码</label>
                                         <div class="controls">
-                                            <input type="text">
+                                            <input type="text">	*
                                         </div>
                                     </div>
                                     <div class="control-group">
                                         <label class="control-label">商户名称</label>
                                         <div class="controls">
-                                            <input type="text" >
+                                            <input type="text" > *
                                             
                                         </div>
                                     </div>
@@ -104,7 +104,13 @@
                                         </div>
                                         </div>
                                         <div class="control-group">
-                                          <label class="control-label">登入邮箱</label>
+                                          <label class="control-label">登入账户</label>
+                                        <div class="controls">
+                                            <input type="text" >  *                                          
+                                        </div>
+                                        </div>
+                                        <div class="control-group">
+                                          <label class="control-label">邮箱</label>
                                         <div class="controls">
                                             <input type="text" >  *                                 
                                         </div>

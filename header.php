@@ -55,8 +55,17 @@
   <ul>
     <li class="active"><a href="index.php"><i class="icon icon-home"></i> <span>首 页</span></a></li>
     <li> <a href="today.php"><i class="icon icon-signal"></i> <span>今日交易</span></a> </li>
-    <li> <a href="history.php"><i class="icon icon-search"></i> <span>历史交易</span></a> </li>    
-    <li> <a href="report.php"><i class="icon icon-download-alt"></i> <span>报表下载</span></a> </li>
+    <li> <a href="history.php"><i class="icon icon-search"></i> <span>历史交易</span></a> </li>
+    <?php /*
+    	@ since 1.5.1
+	    @ 新增报表下载页面
+    */?>  
+    <li class="submenu"> <a href="#"><i class="icon icon-download-alt"></i> <span>报表下载</span></a> 
+    	<ul>
+    	<li><a href="report.php">清算报表</a></li>
+        <li><a href="report-csv.php">CSV报表</a></li>
+      </ul>
+    </li>
     <li> <a href="arrange.php"><i class="icon icon-edit"></i> <span>商户管理</span></a> </li>
     <?php /*
     	@ since 1.4

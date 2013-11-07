@@ -470,7 +470,11 @@
 							</div>
 							<div class="widget-content nopadding">
 								<table class="table table-bordered">
-								<a href="<?php /*这个是个下载链接，至今字段不明*/?>"class="btn btn-large btn-block">导出为CSV文件</a>
+								<?php /*
+									@ since 1.5.1
+									@ 导出CSV按钮被删除
+								*/ ?>
+								
 									<thead>
 										<tr>
 											<th>交易信息</th>

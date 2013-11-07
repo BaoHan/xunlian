@@ -3,13 +3,12 @@
 	*/?>
 <?php include 'header.php';?>
 <?php /*
+		@ since 1.5.1
+		@ 以下功能被删除
 	    @ since 1.5
 	    @ 新增历史查询CSV下载按钮
 	    @ CSV 导出在指定日期内 清算标识为：清算  的交易
     */?>
-<div id="search">
-  <button href="" title="CSV下载" style="color:#fff;margin-top:0;"><a href="#" style="color:#fff;"><i class="icon-download icon-white"></i> CSV下载</a></button>
-</div>
 
 <div id="content">
   <div id="content-header">
@@ -423,8 +422,11 @@
 							</div>
 							<div class="widget-content nopadding">
 								<table class="table table-bordered">
-								<a href="<?php /*这个是个下载链接，至今字段不明*/ ?>" class="btn btn-large btn-block">导出为CSV文件</a>
-
+								<?php /*
+									@ since 1.5.1
+									@ 导出CSV按钮被删除
+								*/ ?>
+								
 									<thead>
 										<tr>
 											<th>交易信息</th>

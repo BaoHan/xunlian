@@ -77,13 +77,13 @@
                                     <div class="control-group">
                                         <label class="control-label">机构代码</label>
                                         <div class="controls">
-                                            <input type="text">
+                                            <input type="text">	*
                                         </div>
                                     </div>
                                      <div class="control-group">
                                         <label class="control-label">机构名称</label>
                                         <div class="controls">
-                                            <input type="text" >
+                                            <input type="text" >	*
                                             
                                         </div>
                                     </div>
@@ -108,7 +108,13 @@
                                         </div>
                                         </div>
                                         <div class="control-group">
-                                          <label class="control-label">登入邮箱</label>
+                                          <label class="control-label">登入账户</label>
+                                        <div class="controls">
+                                            <input type="text" >  *                                         
+                                        </div>
+                                        </div>
+                                        <div class="control-group">
+                                          <label class="control-label">邮箱</label>
                                         <div class="controls">
                                             <input type="text" >  *                                         
                                         </div>
@@ -125,7 +131,7 @@
             <table class="table table-bordered data-table">
               <thead>
                 <tr>
-                 <th>代理商地区</th>
+                 <th>机构地区</th>
                   <?php /*
 	          @ since 1.4
 	          @ 设置为机构账户列表       */?>
